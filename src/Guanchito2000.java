@@ -20,7 +20,7 @@ public class Guanchito2000 implements Robot {
 
     @Override
     public void reload() {
-        energy += maxBattery;
+        energy = maxBattery;
     }
 
     @Override
