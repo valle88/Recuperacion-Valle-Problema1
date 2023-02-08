@@ -2,14 +2,14 @@ import java.util.ArrayList;
 
 public class Guanchito2000 implements Robot {
     private String nombre;
-    private float maxBattery;
+    private float maxBattery ;
     private float energy;
     private ArrayList<String>movemenList;
 
     public Guanchito2000(String nombre, float energy) {
         this.nombre = nombre;
-        this.maxBattery = 100.f;
-        this.energy = energy;
+        this.maxBattery = 100f;
+        this.energy = maxBattery;
         this.movemenList = new ArrayList<>();
     }
 
