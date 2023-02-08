@@ -52,7 +52,7 @@ public class Guanchito2000 implements Robot {
     @Override
     public String status() {
         StringBuilder sb = new StringBuilder();
-        sb.append("El Robot").append(nombre).append("tiene un nivel de energia: ").append(energy).append(" y ha ejecutado " +
+        sb.append("El Robot ").append(nombre).append(" tiene un nivel de energia: ").append(energy).append(" y ha ejecutado " +
                 "los siguientes movimientos:\n ");
         for (int i = 0; i< movemenList.size(); i++){
             sb.append("Movimiento ").append(i + 1).append(": ").append(movemenList.get(i)).append("\n");
