@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Guanchito2000 implements Robot {
     private String nombre;
-    private float maxBattery ;
+    private float maxBattery = 100 ;
     private float energy;
     private ArrayList<String>movemenList;
 
     public Guanchito2000(String nombre, float energy) {
         this.nombre = nombre;
-        this.maxBattery = 100f;
+        this.maxBattery = maxBattery;
         this.energy = maxBattery;
         this.movemenList = new ArrayList<>();
     }
 
     @Override
     public float batteryLevel() {
-        return energy;
+        return maxBattery;
     }
 
     @Override
@@ -25,8 +25,8 @@ public class Guanchito2000 implements Robot {
 
     @Override
     public void turnOn() {
-        if (energy >=5){
-            energy -= energy +0.05f;
+        if (energy >= 5){
+            energy -= energy + 0.5f;
             movemenList.add("Turn On");
         }else{
             System.out.println("not enough energy to turn on");
