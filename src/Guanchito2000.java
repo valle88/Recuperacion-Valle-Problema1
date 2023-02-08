@@ -46,16 +46,16 @@ public class Guanchito2000 implements Robot {
 
     @Override
     public void turnOff() {
-        movemenList.add("turn off");
+        movemenList.add("El robot " +nombre+ " se ha apagado");
     }
 
     @Override
     public String status() {
         StringBuilder sb = new StringBuilder();
         sb.append("El Robot ").append(nombre).append(" tiene un nivel de energia: ").append(energy).append(" y ha ejecutado " +
-                "los siguientes movimientos:\n ");
+                "los siguientes movimientos: \n ");
         for (int i = 0; i< movemenList.size(); i++){
-            sb.append("Movimiento ").append(i + 1).append(": ").append(movemenList.get(i)).append("\n");
+            sb.append("Movimiento ").append(i + 1).append(": ").append(movemenList.get(i)).append(" \n ");
         }
         return sb.toString();
     }
